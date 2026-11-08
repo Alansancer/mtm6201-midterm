@@ -5,21 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Midterm Assignment</title>
-
+<!--Links for the font-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-
+  <!--My stylesheet, for my website to look beautiful-->
   <link rel="stylesheet" href="styles/style.css">
 </head>
-
+<!--I want to say I started this website only using bootstrap, after talking with a few of my classmates I heard that we werent allowed 
+to use bootstrap, so after fighting with bootstrap for almost a week and a half I went back to my basics. That is why the website might look
+a bit werid, at least the html formating-->
 <body>
+  <!--Navigation-->
   <nav class="navigation" aria-label="Main navigation">
     <div class="interno">
       <a class="logo" aria-current="page" href="#home" aria-label="LaslesVPN home">
         <img src="./images/Logo.svg" alt="LaslesVPN logo" height="40">
       </a>
-
+<!--My buttons for the navigation-->
       <div class="principal">
         <ul class="links" aria-label="Website pages">
           <li><a class="disabled" href="#">About</a></li>
@@ -28,7 +31,8 @@
           <li><a href="./testimonials.html">Testimonials</a></li>
           <li><a class="disabled" href="#">Help</a></li>
         </ul>
-
+<!--The idea was to make the sign up buttons to be their own section so that when it came to organizing them, they would be in their own section...
+it did not went as planned-->
         <ul class="account" aria-label="Account links">
           <li><a class="disabled" href="#">Sign In</a></li>
           <li><a class="signup disabled" href="#">Sign Up</a></li>
@@ -36,10 +40,10 @@
       </div>
     </div>
   </nav>
-
+<!--header!!-->
   <header class="cabeza" id="home">
     <div class="width layout">
-
+<!--text begins with the copy-->
       <div class="texto01">
         <h1>Want anything to be easy with <strong>LaslesVPN.</strong></h1>
         <p>Provide a network for all your needs with ease and fun using LaslesVPN discover interesting features from us.</p>
@@ -47,18 +51,16 @@
           Get Started
         </button>
       </div>
-
+<!--Image-->
       <div>
-        <img src="./images/manwithlaptop.svg"
-          alt="Illustration of a man using his computer">
+        <img src="./images/manwithlaptop.svg" alt="Illustration of a man using his computer">
       </div>
     </div>
   </header>
 
   <main>
-
+<!--My small section of their services or their pressence-->
     <section class="stats" aria-labelledby="stats-title">
-
       <ul class="numbers">
         <li class="number">
           <img src="./images/user.svg" alt="" aria-hidden="true">
@@ -85,30 +87,25 @@
         </li>
       </ul>
     </section>
-
+<!--Second section of their features-->
     <section class="features width" aria-labelledby="features-title">
-
       <div>
         <img src="./images/manfireworks.svg"
           alt="Illustration of a man using his computer with fireworks in the background">
       </div>
-
+<!--The text and their checks-->
       <div class="copy">
         <h2 id="features-title">We Provide Many Features You Can Use</h2>
-
         <p>You can explore the features that we provide with fun and have their own functions each feature.</p>
-
         <ul class="items" aria-label="VPN features">
           <li>
             <img src="./images/check.svg" alt="" aria-hidden="true">
             Powerful online protection.
           </li>
-
           <li>
             <img src="./images/check.svg" alt="" aria-hidden="true">
             Internet without borders.
           </li>
-
           <li>
             <img src="./images/check.svg" alt="" aria-hidden="true">
             Supercharged VPN
@@ -121,7 +118,7 @@
         </ul>
       </div>
     </section>
-
+<!--globe section-->
     <section class="network width" aria-labelledby="network-title">
       <div class="texto01">
         <h2 id="network-title">Huge Global Network of Fast VPN</h2>
@@ -131,41 +128,43 @@
         <img src="./images/globe.svg" alt="Illustration of a globe representing a global VPN network">
       </div>
     </section>
+    <!--In here I had the idea of making each logo go brighter and a bit bigger, but when I started to look into the notepad info of the svg,
+    I realzied it was a lot and I did not have enough time to look into it and figure each secction out-->
         <div class="sponsors">
           <img src="./images/Sponsored.svg" alt="Different logos of different companies that use the service">
         </div>
   </main>
 
-
+<!--The footer, I think it might be because I got used to bootstrap and their settings, and I UNDERSTAND it is using the same principles as regular
+flex and grid, but I couldnt make it look like the example... I continue to work on it, but I thought it is best if I submit somethign, rather than submit
+nothing-->
   <footer class="footer">
     <div class="width layout">
       <div class="about">
         <a href="#home" aria-label="LaslesVPN home">
           <img class="footlogo" src="./images/Logo.svg" alt="LaslesVPN logo">
         </a>
-
         <p>LaslesVPN is a private virtual network that has unique features and has high security.</p>
-
+<!--I did the social media icons to have the links, I wanted to have more movement but the time stoped me from getting creative-->
         <nav class="social" aria-label="Social media links">
-
           <a href="https://www.facebook.com/" aria-label="Facebook">
             <img src="./images/Facebook.svg" alt="" aria-hidden="true">
           </a>
-
           <a href="https://x.com/?lang=es" aria-label="Twitter">
             <img src="./images/Twitter.svg" alt="" aria-hidden="true">
           </a>
-
           <a href="https://www.instagram.com/" aria-label="Instagram">
             <img src="./images/Instagram.svg" alt="" aria-hidden="true">
           </a>
 
         </nav>
-
+<!--I discover small by accident, I typed it in just playing around and it worked :D-->
         <small>&copy; 2020 Lasles<strong>VPN</strong></small>
 
       </div>
-
+<!--In my bootstrap version I had created each list in their own menu section, used bootstrap grid to make them all appear as closes as the reference.
+The only thing that I was missing was making the colour match the background. It was aroudn then that I decided to scratch everyhting and go back to the basics.
+I wanted to cut out time so I use a instead of ul/li-->
       <div class="menu">
         <h2 id="product-title">Product</h2>
 
