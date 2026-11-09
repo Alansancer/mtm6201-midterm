@@ -1,16 +1,30 @@
-:root {
-  --text: #0b132a;
-  --muted: #4f5665;
-  --accent: #f53838;
-  --pale: #f8f8f8;
-  --white: #fff;
-  --content-width: 1140px;
-}
+/******************************
+          Basic Settings
+******************************/
 html{
   scroll-behavior: smooth;
 }
-* {
-  box-sizing: border-box;
+.skip-link {
+            background-color: black;
+            color:#ffffff;
+            padding: 8px 16px;
+            position: absolute;
+            top: -999px;
+            left: -999px;
+            z-index: 1000;
+        }
+
+        .skip-link:focus {
+            top:0;
+            left:0;
+        }
+:root {
+  --text: #0b132a;
+  --muted: #35383e;
+  --accent: #671818;
+  --pale: #f8f8f8;
+  --white: #fff;
+  --content-width: 1140px;
 }
 
 body {
@@ -50,6 +64,10 @@ button {
   background: var(--white);
 }
 
+.gordo:hover {
+  transform:scale(1.1);
+  transition:.5s;
+}
 .interno {
   width: min(1200px, calc(100% - 48px));
   min-height: 88px;
@@ -239,7 +257,7 @@ button {
   height: 24px;
 }
 /******************************
-          Network
+          Network Section
 ******************************/
 
 .network {
@@ -281,7 +299,7 @@ button {
 }
 
 /******************************
-          plans
+          Plans Page
 ******************************/
 .plans {
     width: 100%;
@@ -391,7 +409,7 @@ button {
 }
 
 .review.active {
-    border-color: #F53838;
+    border-color: #9f1515;
 }
 
 .person {
@@ -444,7 +462,7 @@ button {
     margin: 0;
 }
 /******************************
-          Pie
+          Pie de pagina
 ******************************/
 
 .footer {
@@ -480,7 +498,7 @@ button {
 }
 
 .about small {
-  color: #999;
+  color: #474545;
 }
 
 .menu {
@@ -506,31 +524,48 @@ button {
 /******************************
           Media Querie
 ******************************/
+/****************
+    Tablet
+*****************/
 
 @media (max-width: 900px) {
-  nav{
-		padding:10px;
-	}	
-	.logo{
-		background-color:transparent;
-	}
-	.logo img{
-		width:65px;
-	}
-	nav .navigation{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	nav ul{
-		display:flex;
-		justify-content:space-around;
-		margin-left:50px;
-	}
-	nav a{
-		padding-left:30px;
-		padding-right:30px;
-	}
+  nav {
+    padding: 10px;
+  }
+
+  nav .navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .logo {
+    background-color: transparent;
+  }
+
+  .logo img {
+    width: 65px;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0;
+    padding: 0;
+    gap: 10px;
+  }
+
+  nav li {
+    list-style: none;
+  }
+
+  nav a {
+    padding: 10px 20px;
+  }
 
   .interno {
     padding: 15px;
@@ -541,14 +576,10 @@ button {
   }
 
   .links, .account {
-    gap: 15px;
-  }
-
-  .panel {
     gap: 18px;
   }
 
-  .links,.account {
+  .panel {
     gap: 18px;
   }
 
@@ -573,6 +604,9 @@ button {
   }
 }
 
+/****************
+    Mobile
+*****************/
 @media (max-width: 620px) {
 
   .width,.interno, .stats {
