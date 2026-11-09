@@ -16,14 +16,22 @@
 to use bootstrap, so after fighting with bootstrap for almost a week and a half I went back to my basics. That is why the website might look
 a bit werid, at least the html formating-->
 <body>
-  <!--Navigation-->
+  <!--Navigation, using classes amaking it work for desktop. I did something and idk how I accomplish it but i made it so that when it reaches tablet and mobile the 
+  ul's are in a column rather than the entire navigation. I played with it in multiple occassions and I did not got it to do what I wanted it to do.
+  This does not mean that I do not know what is happening. The navigation got flex, and then the logo, the principal and account are in another box, this makes so that
+  when I tell them to change in css this are behaving in the way I want it to be but inside their own box.
+  
+  I can see it in my head how to fix but I think I got to the point in which i fear if I move anything else something else I change might be affected as well by my change-->
   <nav class="navigation" aria-label="Main navigation">
     <div class="interno">
+      <!--aria code-->
       <a class="logo" aria-current="page" href="#home" aria-label="LaslesVPN home">
+        <!--height of logo-->
         <img src="./images/Logo.svg" alt="LaslesVPN logo" height="40">
       </a>
 <!--My buttons for the navigation-->
       <div class="principal">
+        <!--navigation and its respective links to other pages-->
         <ul class="links" aria-label="Website pages">
           <li><a class="disabled" href="#">About</a></li>
           <li><a class="disabled" href="#">Features</a></li>
@@ -40,8 +48,10 @@ it did not went as planned-->
       </div>
     </div>
   </nav>
+  <!--I know this is a small landing page but I wanted to include the skip to main content button. I coppied it from a previous assignment ant it originally had tabindex:-1
+  however it was not showing when i pressed tab so I took that away and it seems to work just fine now-->
   <a href="#main-content" class="skip-link">Skip to main content</a>
-<!--header!!-->
+<!--header-->
   <header class="cabeza" id="home">
     <div class="width layout">
 <!--text begins with the copy-->
@@ -59,8 +69,8 @@ it did not went as planned-->
     </div>
   </header>
 
+  <!--id added for the tab button-->
   <main id="main-content">
-    
 <!--My small section of their services or their pressence-->
     <section class="stats">
       <ul class="numbers">
@@ -191,7 +201,6 @@ I wanted to cut out time so I use a instead of ul/li-->
 
       <div class="menu">
         <h2 id="money-title">Earn Money</h2>
-
         <a class="disabled" href="#">Affiliate</a>
         <a class="disabled" href="#">Become Partner</a>
       </div>

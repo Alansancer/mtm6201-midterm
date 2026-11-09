@@ -5,21 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing - LaslesVPN</title>
-
+<!--Same as landing page, font links, followes by stylesheet-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
+<!--I didnt add a skip button in this page because is just small and eveyrhting fits inside the screen-->
 <body>
+    <!--nav similar to the landing page-->
 <nav class="navigation" aria-label="Main navigation">
     <div class="interno">
       <a class="logo" aria-current="page" href="./index.html" aria-label="LaslesVPN home">
         <img src="./images/Logo.svg" alt="LaslesVPN logo" height="40">
       </a>
-
       <div class="principal">
         <ul class="links" aria-label="Website pages">
           <li><a class="disabled" href="#">About</a></li>
@@ -28,7 +28,6 @@
           <li><a href="./testimonials.html">Testimonials</a></li>
           <li><a class="disabled" href="#">Help</a></li>
         </ul>
-
         <ul class="account" aria-label="Account links">
           <li><a class="disabled" href="#">Sign In</a></li>
           <li><a class="signup disabled" href="#">Sign Up</a></li>
@@ -36,7 +35,7 @@
       </div>
     </div>
   </nav>
-
+<!--same structure as landing-->
     <header class="hero">
         <div class="width">
             <div class="copy">
@@ -45,41 +44,38 @@
             </div>
         </div>
     </header>
+<!-- In my bootstrap version I used cards just like we did in class, I had a terrible time since I was not able to make them behave the right way
+ However, it was close to what I wanted it to be.-->
 
-
+ <!--In this version I used ul/li and a bunch of divs to make it look the same as the images. However, I do not have the arrouse not the portion that 
+ shows what comment you are on. I thought of a way of maybe doing the arrows. By downloading the graphic and then using that. However, I have spent to much time in this
+ assignment and I wasted way more time figuring out bootstrap-->
     <main>
+        <!--my cards -->
         <section class="plans width" aria-label="Available pricing plans">
             <div class="cards">
-              
                 <article class="card" aria-labelledby="free-title">
-
+                    <!--image for card-->
                     <img class="picture" src="./images/Premium.svg"
                         alt="Illustration of an open box with fireworks">
-
+                        <!--made one section image, then text. I took the checks from the landing page figma-->
                     <div class="copy">
-
                         <h2 id="free-title">Free Plan</h2>
-
                         <ul class="items" aria-label="Free plan features">
                             <li><img src="./images/check.svg" alt="" aria-hidden="true">Unlimited Bandwitch</li>
                             <li><img src="./images/check.svg" alt="" aria-hidden="true">Encrypted Connection</li>
                             <li><img src="./images/check.svg" alt="" aria-hidden="true">No Traffic Logs</li>
                             <li><img src="./images/check.svg" alt="" aria-hidden="true">Works on All Devices</li>
                         </ul>
-
+                        <!--made the buttons take you to the figma example where the prices are-->
                         <p class="price">Free</p>
-
-                        <a href="https://www.figma.com/design/fHip5a6C6ppIEnrxBz8uEq/FREEBIES-Landingpage-LaslesVPN--Community-?node-id=1-42&t=1ersn0eN70R41qM2-0"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="start"
-                            aria-label="Select the Free Plan">
+                        <!--all prices are link, open in new tab, followed by rel that is supposed to follow target, my class and aria-->
+                        <a href="https://www.figma.com/design/fHip5a6C6ppIEnrxBz8uEq/FREEBIES-Landingpage-LaslesVPN--Community-?node-id=1-42&t=1ersn0eN70R41qM2-0" target="_blank"  rel="noopener noreferrer" class="start" aria-label="Select the Free Plan">
                             Select
                         </a>
                     </div>
                 </article>
-
-               
+                <!--second box-->
                 <article class="card" aria-labelledby="standard-title">
                     <img class="picture" src="./images/Premium.svg"
                         alt="Illustration of an open box with fireworks">
@@ -92,24 +88,15 @@
                             <li><img src="./images/check.svg" alt="" aria-hidden="true">Works on All Devices</li>
                             <li><img src="./images/check.svg" alt="" aria-hidden="true">Connect Anyware</li>
                         </ul>
-<!--Strong means bold-->
+                        <!--Strong means bold-->
                         <p class="price"><strong>$9</strong> / mo</p>
-                        <a href="https://www.figma.com/design/fHip5a6C6ppIEnrxBz8uEq/FREEBIES-Landingpage-LaslesVPN--Community-?node-id=1-39&t=1ersn0eN70R41qM2-0"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="start"
-                            aria-label="Select the Standard Plan">
+                        <!--big link for button-->
+                        <a href="https://www.figma.com/design/fHip5a6C6ppIEnrxBz8uEq/FREEBIES-Landingpage-LaslesVPN--Community-?node-id=1-39&t=1ersn0eN70R41qM2-0" target="_blank" rel="noopener noreferrer" class="signup" aria-label="Select the Standard Plan">
                             Select
                         </a>
                     </div>
                 </article>
-
-<!-- In my bootstrap version I used cards just like we did in class, I had a terrible time since I was not able to make them behave the right way
- However, it was close to what I wanted it to be.-->
-
- <!--In this version I used ul/li and a bunch of divs to make it look the same as the images. However, I do not have the arrouse not the portion that 
- shows what comment you are on. I thought of a way of maybe doing the arrows. By downloading the graphic and then using that. However, I have spent to much time in this
- assignment and I wasted way more time figuring out bootstrap-->
+                <!--third box-->
                 <article class="card" aria-labelledby="premium-title">
                     <img class="picture" src="./images/Premium.svg"
                         alt="Illustration of an open box with fireworks">
@@ -123,51 +110,40 @@
                             <li><img src="./images/check.svg" alt="" aria-hidden="true">Connect Anyware</li>
                             <li><img src="./images/check.svg" alt="" aria-hidden="true">Get New Features</li>
                         </ul>
-
                         <p class="price"><strong>$12</strong> / mo</p>
-
-                        <a href="https://www.figma.com/design/fHip5a6C6ppIEnrxBz8uEq/FREEBIES-Landingpage-LaslesVPN--Community-?node-id=1-36&t=1ersn0eN70R41qM2-0" target="_blank" rel="noopener noreferrer" class="start" aria-label="Select the Premium Plan"> Select</a>
+                        <!--link-->
+                        <a href="https://www.figma.com/design/fHip5a6C6ppIEnrxBz8uEq/FREEBIES-Landingpage-LaslesVPN--Community-?node-id=1-36&t=1ersn0eN70R41qM2-0" target="_blank" rel="noopener noreferrer" class="signup" aria-label="Select the Premium Plan"> Select</a>
                     </div>
                 </article>
             </div>
         </section>
     </main>
-
+    <!--footer similar to landing-->
     <footer class="footer">
-
         <div class="width layout">
-
             <div class="about">
-
                 <a href="./index.html" aria-label="LaslesVPN home">
                     <img class="footlogo" src="./images/Logo.svg" alt="LaslesVPN logo">
                 </a>
-
                 <p>
                     LaslesVPN is a private virtual network that has unique
                     features and has high security.
                 </p>
-
                 <nav class="social" aria-label="Social media links">
-
                     <a href="https://www.facebook.com/" aria-label="Facebook">
                         <img src="./images/Facebook.svg" alt="" aria-hidden="true">
                     </a>
-
                     <a href="https://x.com/?lang=es" aria-label="Twitter">
                         <img src="./images/Twitter.svg" alt="" aria-hidden="true">
                     </a>
-
                     <a href="https://www.instagram.com/" aria-label="Instagram">
                         <img src="./images/Instagram.svg" alt="" aria-hidden="true">
                     </a>
                 </nav>
                 <small>&copy; 2020 Lasles<strong>VPN</strong></small>
             </div>
-
             <div class="menu">
                 <h2 id="product-title">Product</h2>
-
                 <span class="disabled">Download</span>
                 <a href="./pricing.html" aria-current="page">Pricing</a>
                 <span class="disabled">Locations</span>
@@ -175,10 +151,8 @@
                 <span class="disabled">Countries</span>
                 <span class="disabled">Blog</span>
             </div>
-
             <div class="menu">
                 <h2 id="engage-title">Engage</h2>
-
                 <span class="disabled">LaslesVPN ?</span>
                 <span class="disabled">FAQ</span>
                 <span class="disabled">Tutorials</span>
@@ -186,7 +160,6 @@
                 <span class="disabled">Privacy Policy</span>
                 <span class="disabled">Terms of Service</span>
             </div>
-
             <div class="menu">
                 <h2 id="money-title">Earn Money</h2>
                 <span class="disabled">Affiliate</span>
